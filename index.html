@@ -83,3 +83,47 @@
           <p class="text-center">No dudes en ponerte en contacto con nosotros para obtener más información sobre costos y otros detalles relacionados.</p>
           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Contactar</button>
         </div>
+           <!--Modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-dialog">
+          <div class="modal-content">
+       <!--Header del Modal-->
+       <div class="modal-header">
+        <h1 class="modal-title">Contactar</h1>
+        <button type="button" class="close" data-dismiss="modal">x</button>
+       </div>
+       <!--Body del Modal-->
+       <div class="modal-body">
+        <form action="../controllers/mensajes.php" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
+          </div>
+          <div class="form-group"> 
+            <label for="apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" placeholder="apellido" name="apellido" required>
+          </div> 
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="e-mail" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="tel">Teléfono</label>
+            <input type="number" class="form-control" id="telefono" placeholder="teléfono" name="telefono" required> 
+          </div>
+          <div class="form-group">
+            <select class="form-control" id="categoria" name="categoria" onchange="showUser(this.value)" required>
+            <option value="masculino">Categoría Masculino</option>
+            <option value="femenino">Categoría Femenino</option>
+            <option value="sponsor">Sponsor</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-success btn-block"> Enviar</button>
+        </form>
+  
+        </div>
+        <!--Footer del Mdoal-->
+        <div class="modal-footer">
+          <p> Nos contactaremos con ud a la brevedad</p>
+          </div>
+    </main>
