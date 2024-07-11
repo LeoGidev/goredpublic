@@ -1,0 +1,45 @@
+
+body {
+    background-image: url('../img/fondodeportivo.webp');
+    background-attachment: fixed; /* Esto asegura que el fondo se mantenga fijo al desplazarse */
+    background-position: center top; /* Centra la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    overflow-x: hidden !important;
+}
+html {
+  overflow-x: hidden !important;
+}
+
+/* Estilos adicionales */
+.navbar.transparent {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(39, 38, 38, 0)) !important;
+    border-bottom: none;
+    box-shadow: none;
+    transition: 3s;
+}
+
+.navbar.transparent .navbar-brand,
+.navbar.transparent .navbar-nav .nav-link {
+    color: #ffffff; /* Letras blancas */
+    transition: 3s;
+}
+.navbar.transparent button{
+  transition: 3s;
+}
+.navbar.fixed {
+    background-color: #ffffff; /* Fondo negro */
+    box-shadow: 0px 3px 3px black;
+    color:#292929;
+    transition: 3s;
+}
+.navbar.fixed .navbar-brand,
+.navbar.fixed .navbar-nav .nav-link {
+    color: #000000; 
+    transition: 3s;
+}
+.navbar.fixed button{
+  background-color: rgb(0, 0, 0);
+  color:rgb(63, 63, 63);
+  transition: 3s;
+
+}
